@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+  		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  		<style type="text/css">
+  			.my{height: 200px;line-height: 22220px;}
+  			.my li{height: 200px; line-height: 200px;}
+  		</style>  
+	</head>
+	<body>
+	 <ul id='nav' class="nav nav-tabs my">
+	   <li class="active"><a href="#">Home</a></li>
+	   <li><a href="#">SVN</a></li>
+	   <li><a href="#">iOS</a></li>
+	   <li><a href="#">VB.Net</a></li>
+	   <li><a href="#">Java</a></li>
+	   <li><a href="#">PHP</a></li>
+	</ul>
+	</body>
+	<script>
+	var a=$('#nav li');
+	var arr=$('#nav li');
+	$('#nav').appendTo()
+	$.each(arr,function(i,item){
+		debugger;
+//		$(this).css('height','200px'); 	
+		$(this).css('line-height','200px');
+	})
+	$('li').bind('click',function(ev){
+		$('li').removeClass('active')
+		debugger;
+		$(this).addClass('active');
+//		this.addCl('active');
+	})
+//		$('#nav li').on('mouseover',function(){
+//			$.each(a, function(i,item) {
+//				item.bind('onmouseover',function(){
+//					debugger;
+//				});
+//				debugger;
+//			});
+//			$('#nav li').addClass('active')
+//		})
+		
+	</script>
+</html>
